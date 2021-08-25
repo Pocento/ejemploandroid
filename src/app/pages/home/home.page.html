@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Traspaso de datos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--<ion-header>
+    <ion-toolbar>
+      <ion-title class="titulo" size="large"> </ion-title>
+    </ion-toolbar>
+  </ion-header>-->
+  <!-- input with placehoder
+  <ion-input placeholder="Ingrese el texto"></ion-input>-->
+  <div class="titulo"> Formulario ingreso de datos</div>
+  <!-- Texto flotante -->
+  <div class="contenido">
+    <ion-item>
+      <ion-label position="floating">Rut</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nombre Completo</ion-label>
+      <ion-input value="{{rut}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Edad</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-button (click)="irPagina1()" color="primary">Guardar</ion-button>
+    <ion-button (click)="cambiarDatos()" color="secondary">Pagina 2</ion-button>
+    <ion-button (click)="irPagina3()" color="tertiary">Pagina 3</ion-button>
+  
+  </div>
+  <ion-label>{{rut}} - {{nombreCompleto}} - {{edad}}</ion-label> 
+  
+</ion-content>
