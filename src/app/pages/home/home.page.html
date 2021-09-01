@@ -19,7 +19,10 @@
   <div class="contenido">
     <ion-item>
       <ion-label position="floating">Rut</ion-label>
-      <ion-input></ion-input>
+      <!-- asociar al formulario bajo el nombre de "elrut" -->
+      <ion-input [formControl]="elrut"></ion-input>
+      <!-- imprimir el valor del objeto control formulario llamado "elrut"-->
+      <ion-label>{{elrut.value}}</ion-label>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Nombre Completo</ion-label>
